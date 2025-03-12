@@ -1,0 +1,14 @@
+{
+  "name": "Button",
+  "description": "A customizable button component with various variants and states",
+  "props": {
+    "variant": "The style of the button: 'primary', 'secondary', 'outline', or 'ghost'",
+    "size": "The size of the button: 'sm', 'md', or 'lg'",
+    "isLoading": "Whether the button is in a loading state",
+    "onClick": "Function called when the button is clicked",
+    "disabled": "Whether the button is disabled",
+    "className": "Additional CSS classes to apply to the button"
+  },
+  "example": "<Button variant=\"primary\" size=\"md\" onClick={() => alert('Clicked!')}>Click me</Button>"
+}
+

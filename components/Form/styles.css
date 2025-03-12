@@ -1,0 +1,87 @@
+.form {
+  display: block;
+}
+
+.form--vertical .form-item {
+  margin-bottom: 1rem;
+}
+
+.form--horizontal {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.form--horizontal .form-item {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: flex-start;
+}
+
+.form--horizontal .form-item__label {
+  padding-top: 0.5rem;
+}
+
+.form--inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.form--inline .form-item {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form--inline .form-item__label {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* Form Item Styles */
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item__label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-item__required {
+  color: #e53e3e;
+  margin-left: 0.25rem;
+}
+
+.form-item__control {
+  position: relative;
+}
+
+.form-item__help {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-item__error {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-item--error input,
+.form-item--error select,
+.form-item--error textarea {
+  border-color: #e53e3e;
+}
+
+.form-item--error input:focus,
+.form-item--error select:focus,
+.form-item--error textarea:focus {
+  box-shadow: 0 0 0 2px rgba(229, 62, 62, 0.2);
+}
+

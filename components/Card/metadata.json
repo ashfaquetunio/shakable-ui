@@ -1,0 +1,13 @@
+{
+  "name": "Card",
+  "description": "A container component for grouping related content and actions",
+  "props": {
+    "header": "Optional content to render in the card header",
+    "footer": "Optional content to render in the card footer",
+    "hoverable": "Whether the card should have a hover effect",
+    "bordered": "Whether the card should have a border",
+    "className": "Additional CSS classes to apply to the card"
+  },
+  "example": "<Card header={<h3>Card Title</h3>} footer={<Button>Action</Button>} hoverable><p>This is the card content</p></Card>"
+}
+

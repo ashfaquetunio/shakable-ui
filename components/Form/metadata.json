@@ -1,0 +1,21 @@
+{
+  "name": "Form",
+  "description": "A flexible form component with support for validation and different layouts",
+  "props": {
+    "onSubmit": "Function called when the form is submitted",
+    "layout": "Form layout: 'vertical', 'horizontal', or 'inline'",
+    "className": "Additional CSS classes to apply to the form"
+  },
+  "subcomponents": {
+    "FormItem": {
+      "props": {
+        "label": "Label for the form field",
+        "help": "Optional help text to display below the field",
+        "error": "Optional error message",
+        "required": "Whether this field is required"
+      }
+    }
+  },
+  "example": "<Form onSubmit={handleSubmit} layout=\"vertical\">\n  <Form.Item label=\"Username\" required error={errors.username}>\n    <input type=\"text\" name=\"username\" />\n  </Form.Item>\n  <Form.Item label=\"Password\" required>\n    <input type=\"password\" name=\"password\" />\n  </Form.Item>\n  <Button type=\"submit\">Submit</Button>\n</Form>"
+}
+

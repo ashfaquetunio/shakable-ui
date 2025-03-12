@@ -1,0 +1,14 @@
+{
+  "name": "Modal",
+  "description": "A dialog component that appears in front of the main content to provide critical information or request user input",
+  "props": {
+    "isOpen": "Whether the modal is visible",
+    "onClose": "Function to close the modal",
+    "title": "Optional modal title",
+    "footer": "Optional modal footer content, typically contains action buttons",
+    "width": "Width of the modal (default: '500px')",
+    "closeOnOverlayClick": "Whether to close the modal when the overlay is clicked"
+  },
+  "example": "<Modal isOpen={isOpen} onClose={() => setIsOpen(false)} title=\"Confirm Action\" footer={<><Button onClick={() => setIsOpen(false)} variant=\"outline\">Cancel</Button><Button>Confirm</Button></>}>\n  <p>Are you sure you want to perform this action?</p>\n</Modal>"
+}
+
